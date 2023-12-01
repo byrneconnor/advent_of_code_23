@@ -1,11 +1,14 @@
 import re
 
+file_path = 'C:/Users/Connor/Documents/Work related/Jobs, CVs and covering letters/Advent of code/advent_of_code_23/data/'
+file_name = 'test.txt'
+
 # Open text file
-with open('C:/Users/Connor/Documents/Work related/Jobs, CVs and covering letters/Advent of code/advent_of_code_23/day_1/test.txt', 'r') as file:
+with open(file_path + file_name, 'r') as file:
     # Read the entire contents of the file
     file_contents = file.read()
 
-file_contents
+#file_contents
 
 lines = file_contents.splitlines()
 
