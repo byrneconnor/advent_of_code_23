@@ -60,7 +60,7 @@ class SnowProduction:
 
 
 # Example usage
-file_path = 'C:/Users/Connor/Documents/Work related/Jobs, CVs and covering letters/Advent of code/advent_of_code_23/data/'
+file_path = 'C:/Users/Connor/Documents/Work related/Jobs, CVs and covering letters/Advent of code/advent_of_code_23/data/day_1/'
 file_name = 'main_data.txt'
 
 snow_production = SnowProduction(file_path=file_path, file_name=file_name)
