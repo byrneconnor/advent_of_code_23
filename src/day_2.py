@@ -48,9 +48,7 @@ elf_game = ElfGame(input_location)
 input_data = elf_game.import_txt()
 result_dict = elf_game.convert_to_dict(input_data)
 
-# Print the result
-print(result_dict)
-
+# Part 1
 red_limit = 12
 green_limit = 13
 blue_limit = 14
@@ -61,3 +59,22 @@ filtered_ids = [int(key) for key, value in result_dict.items() if ('red' in valu
                 and ('blue' in value and max(value['blue']) <= blue_limit)]
 
 sum(filtered_ids)
+
+# Part 2
+max_values = {}
+
+for key, value in result_dict.items():
+    max_values[key] = {colour: max(quantity) for colour, quantity in value.items()}
+
+print(max_values)
+
+product_list = []
+
+for key, value in max_values.items():
+    product = 1
+    for num in value.values():
+        product *= num
+    product_list.append(product)
+
+sum(product_list)
+
